@@ -1,5 +1,26 @@
 {
     "name": "vapor template",
+    "excludes": [
+        "leaf.seed",
+        ".git/",
+        ".xcodeproj/",
+        ".build/",
+        ".png",
+        "Resources/",
+        "Public/"
+    ],
+    "conditionalIncludes": [
+        {
+            "condition": {
+                "var": "leaf",
+                "equals": "true"
+            },
+            "includes" [
+                "Resources/"
+                "Public/"
+            ]
+        }
+    ],
     "variables": [
         {
             "var": "name",
@@ -53,5 +74,6 @@
                 }
             ]
         }
-    ]
+    ],
+    
 }
